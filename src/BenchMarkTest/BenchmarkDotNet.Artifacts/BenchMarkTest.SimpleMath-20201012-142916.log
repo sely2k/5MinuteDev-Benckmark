@@ -1,0 +1,4 @@
+// Validating benchmarks:
+Only 1 benchmark method in a group can have "Baseline = true" applied to it, group Job-ESMIFS(Toolchain=InProcessEmitToolchain)-[N=100] in class SimpleMath has 2
+Only 1 benchmark method in a group can have "Baseline = true" applied to it, group Job-ESMIFS(Toolchain=InProcessEmitToolchain)-[N=200] in class SimpleMath has 2
+No exporters defined, results will not be persisted.

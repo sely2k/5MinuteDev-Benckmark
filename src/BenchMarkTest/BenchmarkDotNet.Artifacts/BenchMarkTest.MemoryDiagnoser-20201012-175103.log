@@ -1,0 +1,293 @@
+// Validating benchmarks:
+No exporters defined, results will not be persisted.
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 3 exe(s) in Parallel: Start   *****
+// ***** Done, took 00:00:03 (3.46 sec)   *****
+// ***** Failed to build in Parallel, switching to sequential build   *****
+// ***** Done, took 00:00:04 (4.32 sec)   *****
+// Found 3 benchmarks:
+//   MemoryDiagnoser.ValueTaskCost: Job-FMJZQI(Toolchain=InProcessEmitToolchain)
+//   MemoryDiagnoser.ValueTaskCost: .NET Core 3.1(Runtime=.NET Core 3.1)
+//   MemoryDiagnoser.ValueTaskCost: .NET Core 5.0(Runtime=.NET Core 5.0)
+
+// **************************
+// Benchmark: MemoryDiagnoser.ValueTaskCost: Job-FMJZQI(Toolchain=InProcessEmitToolchain)
+// *** Execute ***
+// Launch: 1 / 1
+// ! Failed to set up priority High for process System.Diagnostics.Process (dotnet). Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.8 (CoreCLR 4.700.20.41105, CoreFX 4.700.20.41903), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-FMJZQI(Toolchain=InProcessEmitToolchain)
+
+OverheadJitting  1: 1 op, 185654.00 ns, 185.6540 us/op
+WorkloadJitting  1: 1 op, 5284947.00 ns, 5.2849 ms/op
+
+OverheadJitting  2: 16 op, 226695.00 ns, 14.1684 us/op
+WorkloadJitting  2: 16 op, 28088394.00 ns, 1.7555 ms/op
+
+WorkloadPilot    1: 16 op, 29542032.00 ns, 1.8464 ms/op
+WorkloadPilot    2: 32 op, 62579747.00 ns, 1.9556 ms/op
+WorkloadPilot    3: 64 op, 109883816.00 ns, 1.7169 ms/op
+WorkloadPilot    4: 128 op, 156567604.00 ns, 1.2232 ms/op
+WorkloadPilot    5: 256 op, 326386944.00 ns, 1.2749 ms/op
+WorkloadPilot    6: 512 op, 692329313.00 ns, 1.3522 ms/op
+
+OverheadWarmup   1: 512 op, 4222.00 ns, 8.2461 ns/op
+OverheadWarmup   2: 512 op, 1581.00 ns, 3.0879 ns/op
+OverheadWarmup   3: 512 op, 1457.00 ns, 2.8457 ns/op
+OverheadWarmup   4: 512 op, 1561.00 ns, 3.0488 ns/op
+OverheadWarmup   5: 512 op, 1621.00 ns, 3.1660 ns/op
+OverheadWarmup   6: 512 op, 1513.00 ns, 2.9551 ns/op
+OverheadWarmup   7: 512 op, 1544.00 ns, 3.0156 ns/op
+OverheadWarmup   8: 512 op, 1637.00 ns, 3.1973 ns/op
+OverheadWarmup   9: 512 op, 1536.00 ns, 3.0000 ns/op
+
+OverheadActual   1: 512 op, 1613.00 ns, 3.1504 ns/op
+OverheadActual   2: 512 op, 1794.00 ns, 3.5039 ns/op
+OverheadActual   3: 512 op, 1618.00 ns, 3.1602 ns/op
+OverheadActual   4: 512 op, 1841.00 ns, 3.5957 ns/op
+OverheadActual   5: 512 op, 1771.00 ns, 3.4590 ns/op
+OverheadActual   6: 512 op, 1467.00 ns, 2.8652 ns/op
+OverheadActual   7: 512 op, 1791.00 ns, 3.4980 ns/op
+OverheadActual   8: 512 op, 1523.00 ns, 2.9746 ns/op
+OverheadActual   9: 512 op, 1584.00 ns, 3.0938 ns/op
+OverheadActual  10: 512 op, 1538.00 ns, 3.0039 ns/op
+OverheadActual  11: 512 op, 1486.00 ns, 2.9023 ns/op
+OverheadActual  12: 512 op, 2083.00 ns, 4.0684 ns/op
+OverheadActual  13: 512 op, 1767.00 ns, 3.4512 ns/op
+OverheadActual  14: 512 op, 1525.00 ns, 2.9785 ns/op
+OverheadActual  15: 512 op, 1692.00 ns, 3.3047 ns/op
+OverheadActual  16: 512 op, 2240.00 ns, 4.3750 ns/op
+OverheadActual  17: 512 op, 1722.00 ns, 3.3633 ns/op
+OverheadActual  18: 512 op, 1900.00 ns, 3.7109 ns/op
+OverheadActual  19: 512 op, 1501.00 ns, 2.9316 ns/op
+OverheadActual  20: 512 op, 1519.00 ns, 2.9668 ns/op
+
+WorkloadWarmup   1: 512 op, 721461886.00 ns, 1.4091 ms/op
+WorkloadWarmup   2: 512 op, 723940743.00 ns, 1.4139 ms/op
+WorkloadWarmup   3: 512 op, 733508943.00 ns, 1.4326 ms/op
+WorkloadWarmup   4: 512 op, 722095559.00 ns, 1.4103 ms/op
+WorkloadWarmup   5: 512 op, 723707830.00 ns, 1.4135 ms/op
+WorkloadWarmup   6: 512 op, 709061937.00 ns, 1.3849 ms/op
+
+WorkloadActual   1: 512 op, 711367311.00 ns, 1.3894 ms/op
+WorkloadActual   2: 512 op, 709697598.00 ns, 1.3861 ms/op
+WorkloadActual   3: 512 op, 708312098.00 ns, 1.3834 ms/op
+WorkloadActual   4: 512 op, 703910521.00 ns, 1.3748 ms/op
+WorkloadActual   5: 512 op, 696724567.00 ns, 1.3608 ms/op
+WorkloadActual   6: 512 op, 733656190.00 ns, 1.4329 ms/op
+WorkloadActual   7: 512 op, 695905523.00 ns, 1.3592 ms/op
+WorkloadActual   8: 512 op, 691076178.00 ns, 1.3498 ms/op
+WorkloadActual   9: 512 op, 694007867.00 ns, 1.3555 ms/op
+WorkloadActual  10: 512 op, 686457902.00 ns, 1.3407 ms/op
+WorkloadActual  11: 512 op, 693375847.00 ns, 1.3542 ms/op
+WorkloadActual  12: 512 op, 690758458.00 ns, 1.3491 ms/op
+WorkloadActual  13: 512 op, 685971512.00 ns, 1.3398 ms/op
+WorkloadActual  14: 512 op, 689574410.00 ns, 1.3468 ms/op
+WorkloadActual  15: 512 op, 686540592.00 ns, 1.3409 ms/op
+
+WorkloadResult   1: 512 op, 711365656.00 ns, 1.3894 ms/op
+WorkloadResult   2: 512 op, 709695943.00 ns, 1.3861 ms/op
+WorkloadResult   3: 512 op, 708310443.00 ns, 1.3834 ms/op
+WorkloadResult   4: 512 op, 703908866.00 ns, 1.3748 ms/op
+WorkloadResult   5: 512 op, 696722912.00 ns, 1.3608 ms/op
+WorkloadResult   6: 512 op, 695903868.00 ns, 1.3592 ms/op
+WorkloadResult   7: 512 op, 691074523.00 ns, 1.3498 ms/op
+WorkloadResult   8: 512 op, 694006212.00 ns, 1.3555 ms/op
+WorkloadResult   9: 512 op, 686456247.00 ns, 1.3407 ms/op
+WorkloadResult  10: 512 op, 693374192.00 ns, 1.3542 ms/op
+WorkloadResult  11: 512 op, 690756803.00 ns, 1.3491 ms/op
+WorkloadResult  12: 512 op, 685969857.00 ns, 1.3398 ms/op
+WorkloadResult  13: 512 op, 689572755.00 ns, 1.3468 ms/op
+WorkloadResult  14: 512 op, 686538937.00 ns, 1.3409 ms/op
+GC:  9 1 0 61534928 512
+Threading:  522311 1 512
+
+
+Mean = 1.359 ms, StdErr = 0.005 ms (0.34%), N = 14, StdDev = 0.017 ms
+Min = 1.340 ms, Q1 = 1.347 ms, Median = 1.355 ms, Q3 = 1.371 ms, Max = 1.389 ms
+IQR = 0.024 ms, LowerFence = 1.312 ms, UpperFence = 1.407 ms
+ConfidenceInterval = [1.340 ms; 1.379 ms] (CI 99.9%), Margin = 0.020 ms (1.44% of Mean)
+Skewness = 0.55, Kurtosis = 1.7, MValue = 2
+
+// **************************
+// Benchmark: MemoryDiagnoser.ValueTaskCost: .NET Core 3.1(Runtime=.NET Core 3.1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET Core 3.1.dll" --benchmarkName "BenchMarkTest.MemoryDiagnoser.ValueTaskCost" --job ".NET Core 3.1" --benchmarkId 0 in /Users/leonardodottavi/Projects/BenchMarkTest/BenchMarkTest/bin/Release/netcoreapp3.1/.NET Core 3.1/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.8 (CoreCLR 4.700.20.41105, CoreFX 4.700.20.41903), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET Core 3.1
+
+OverheadJitting  1: 1 op, 295130.00 ns, 295.1300 us/op
+WorkloadJitting  1: 1 op, 8516744.00 ns, 8.5167 ms/op
+
+OverheadJitting  2: 16 op, 252395.00 ns, 15.7747 us/op
+WorkloadJitting  2: 16 op, 31845736.00 ns, 1.9904 ms/op
+
+WorkloadPilot    1: 16 op, 26352737.00 ns, 1.6470 ms/op
+WorkloadPilot    2: 32 op, 57282655.00 ns, 1.7901 ms/op
+WorkloadPilot    3: 64 op, 116843160.00 ns, 1.8257 ms/op
+WorkloadPilot    4: 128 op, 164792950.00 ns, 1.2874 ms/op
+WorkloadPilot    5: 256 op, 317894290.00 ns, 1.2418 ms/op
+WorkloadPilot    6: 512 op, 666354446.00 ns, 1.3015 ms/op
+
+OverheadWarmup   1: 512 op, 4489.00 ns, 8.7676 ns/op
+OverheadWarmup   2: 512 op, 1550.00 ns, 3.0273 ns/op
+OverheadWarmup   3: 512 op, 1527.00 ns, 2.9824 ns/op
+OverheadWarmup   4: 512 op, 1492.00 ns, 2.9141 ns/op
+OverheadWarmup   5: 512 op, 1542.00 ns, 3.0117 ns/op
+OverheadWarmup   6: 512 op, 1542.00 ns, 3.0117 ns/op
+OverheadWarmup   7: 512 op, 1511.00 ns, 2.9512 ns/op
+OverheadWarmup   8: 512 op, 1555.00 ns, 3.0371 ns/op
+
+OverheadActual   1: 512 op, 1537.00 ns, 3.0020 ns/op
+OverheadActual   2: 512 op, 1556.00 ns, 3.0391 ns/op
+OverheadActual   3: 512 op, 1525.00 ns, 2.9785 ns/op
+OverheadActual   4: 512 op, 1618.00 ns, 3.1602 ns/op
+OverheadActual   5: 512 op, 1562.00 ns, 3.0508 ns/op
+OverheadActual   6: 512 op, 1707.00 ns, 3.3340 ns/op
+OverheadActual   7: 512 op, 1510.00 ns, 2.9492 ns/op
+OverheadActual   8: 512 op, 1536.00 ns, 3.0000 ns/op
+OverheadActual   9: 512 op, 1460.00 ns, 2.8516 ns/op
+OverheadActual  10: 512 op, 1527.00 ns, 2.9824 ns/op
+OverheadActual  11: 512 op, 1502.00 ns, 2.9336 ns/op
+OverheadActual  12: 512 op, 1510.00 ns, 2.9492 ns/op
+OverheadActual  13: 512 op, 1550.00 ns, 3.0273 ns/op
+OverheadActual  14: 512 op, 1532.00 ns, 2.9922 ns/op
+OverheadActual  15: 512 op, 1546.00 ns, 3.0195 ns/op
+
+WorkloadWarmup   1: 512 op, 661517881.00 ns, 1.2920 ms/op
+WorkloadWarmup   2: 512 op, 667670886.00 ns, 1.3040 ms/op
+WorkloadWarmup   3: 512 op, 665536998.00 ns, 1.2999 ms/op
+WorkloadWarmup   4: 512 op, 658227040.00 ns, 1.2856 ms/op
+WorkloadWarmup   5: 512 op, 660249438.00 ns, 1.2895 ms/op
+WorkloadWarmup   6: 512 op, 663105846.00 ns, 1.2951 ms/op
+WorkloadWarmup   7: 512 op, 655819428.00 ns, 1.2809 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 512 op, 668825764.00 ns, 1.3063 ms/op
+WorkloadActual   2: 512 op, 662831081.00 ns, 1.2946 ms/op
+WorkloadActual   3: 512 op, 676015791.00 ns, 1.3203 ms/op
+WorkloadActual   4: 512 op, 665492209.00 ns, 1.2998 ms/op
+WorkloadActual   5: 512 op, 667713918.00 ns, 1.3041 ms/op
+WorkloadActual   6: 512 op, 676071242.00 ns, 1.3205 ms/op
+WorkloadActual   7: 512 op, 667872581.00 ns, 1.3044 ms/op
+WorkloadActual   8: 512 op, 672664609.00 ns, 1.3138 ms/op
+WorkloadActual   9: 512 op, 665506483.00 ns, 1.2998 ms/op
+WorkloadActual  10: 512 op, 658462173.00 ns, 1.2861 ms/op
+WorkloadActual  11: 512 op, 670357378.00 ns, 1.3093 ms/op
+WorkloadActual  12: 512 op, 675255022.00 ns, 1.3189 ms/op
+WorkloadActual  13: 512 op, 665549561.00 ns, 1.2999 ms/op
+WorkloadActual  14: 512 op, 666392710.00 ns, 1.3015 ms/op
+WorkloadActual  15: 512 op, 662496732.00 ns, 1.2939 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 512 op, 668824228.00 ns, 1.3063 ms/op
+WorkloadResult   2: 512 op, 662829545.00 ns, 1.2946 ms/op
+WorkloadResult   3: 512 op, 676014255.00 ns, 1.3203 ms/op
+WorkloadResult   4: 512 op, 665490673.00 ns, 1.2998 ms/op
+WorkloadResult   5: 512 op, 667712382.00 ns, 1.3041 ms/op
+WorkloadResult   6: 512 op, 676069706.00 ns, 1.3204 ms/op
+WorkloadResult   7: 512 op, 667871045.00 ns, 1.3044 ms/op
+WorkloadResult   8: 512 op, 672663073.00 ns, 1.3138 ms/op
+WorkloadResult   9: 512 op, 665504947.00 ns, 1.2998 ms/op
+WorkloadResult  10: 512 op, 658460637.00 ns, 1.2861 ms/op
+WorkloadResult  11: 512 op, 670355842.00 ns, 1.3093 ms/op
+WorkloadResult  12: 512 op, 675253486.00 ns, 1.3189 ms/op
+WorkloadResult  13: 512 op, 665548025.00 ns, 1.2999 ms/op
+WorkloadResult  14: 512 op, 666391174.00 ns, 1.3015 ms/op
+WorkloadResult  15: 512 op, 662495196.00 ns, 1.2939 ms/op
+GC:  9 0 0 61534720 512
+Threading:  523744 0 512
+
+// AfterAll
+// Benchmark Process 17213 has exited with code 0
+
+Mean = 1.305 ms, StdErr = 0.003 ms (0.20%), N = 15, StdDev = 0.010 ms
+Min = 1.286 ms, Q1 = 1.300 ms, Median = 1.304 ms, Q3 = 1.312 ms, Max = 1.320 ms
+IQR = 0.012 ms, LowerFence = 1.282 ms, UpperFence = 1.329 ms
+ConfidenceInterval = [1.294 ms; 1.316 ms] (CI 99.9%), Margin = 0.011 ms (0.83% of Mean)
+Skewness = 0.1, Kurtosis = 1.96, MValue = 2
+
+// Build Error: Standard output: 
+  
+ Standard error: 
+ /usr/local/share/dotnet/sdk/3.1.402/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets(127,5): error NETSDK1045: la versione corrente di .NET SDK non supporta .NET Core 5.0 come destinazione. Impostare come destinazione .NET Core 3.1 o una versione precedente oppure usare una versione di .NET SDK che supporta .NET Core 5.0. [/Users/leonardodottavi/Projects/BenchMarkTest/BenchMarkTest/bin/Release/netcoreapp3.1/.NET Core 5.0/BenchmarkDotNet.Autogenerated.csproj]
+  Individuazione dei progetti da ripristinare...
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+
+// * Detailed results *
+MemoryDiagnoser.ValueTaskCost: Job-FMJZQI(Toolchain=InProcessEmitToolchain)
+Runtime = ; GC = 
+Mean = 1.359 ms, StdErr = 0.005 ms (0.34%), N = 14, StdDev = 0.017 ms
+Min = 1.340 ms, Q1 = 1.347 ms, Median = 1.355 ms, Q3 = 1.371 ms, Max = 1.389 ms
+IQR = 0.024 ms, LowerFence = 1.312 ms, UpperFence = 1.407 ms
+ConfidenceInterval = [1.340 ms; 1.379 ms] (CI 99.9%), Margin = 0.020 ms (1.44% of Mean)
+Skewness = 0.55, Kurtosis = 1.7, MValue = 2
+-------------------- Histogram --------------------
+[1.334 ms ; 1.396 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+MemoryDiagnoser.ValueTaskCost: .NET Core 3.1(Runtime=.NET Core 3.1)
+Runtime = .NET Core 3.1.8 (CoreCLR 4.700.20.41105, CoreFX 4.700.20.41903), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 1.305 ms, StdErr = 0.003 ms (0.20%), N = 15, StdDev = 0.010 ms
+Min = 1.286 ms, Q1 = 1.300 ms, Median = 1.304 ms, Q3 = 1.312 ms, Max = 1.320 ms
+IQR = 0.012 ms, LowerFence = 1.282 ms, UpperFence = 1.329 ms
+ConfidenceInterval = [1.294 ms; 1.316 ms] (CI 99.9%), Margin = 0.011 ms (0.83% of Mean)
+Skewness = 0.1, Kurtosis = 1.96, MValue = 2
+-------------------- Histogram --------------------
+[1.281 ms ; 1.326 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MemoryDiagnoser.ValueTaskCost: .NET Core 5.0(Runtime=.NET Core 5.0)
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=macOS Catalina 10.15.6 (19G2021) [Darwin 19.6.0]
+Intel Core i9-8950HK CPU 2.90GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET Core SDK=3.1.402
+  [Host]        : .NET Core 3.1.8 (CoreCLR 4.700.20.41105, CoreFX 4.700.20.41903), X64 RyuJIT
+  .NET Core 3.1 : .NET Core 3.1.8 (CoreCLR 4.700.20.41105, CoreFX 4.700.20.41903), X64 RyuJIT
+
+
+|        Method |           Job |       Runtime |              Toolchain |     Mean |     Error |    StdDev |   Gen 0 |  Gen 1 | Gen 2 | Allocated |
+|-------------- |-------------- |-------------- |----------------------- |---------:|----------:|----------:|--------:|-------:|------:|----------:|
+| ValueTaskCost |    Job-FMJZQI | .NET Core 3.1 | InProcessEmitToolchain | 1.359 ms | 0.0195 ms | 0.0173 ms | 17.5781 | 1.9531 |     - |  120185 B |
+| ValueTaskCost | .NET Core 3.1 | .NET Core 3.1 |                Default | 1.305 ms | 0.0109 ms | 0.0102 ms | 17.5781 |      - |     - |  120185 B |
+| ValueTaskCost | .NET Core 5.0 | .NET Core 5.0 |                Default |       NA |        NA |        NA |       - |      - |     - |         - |
+
+Benchmarks with issues:
+  MemoryDiagnoser.ValueTaskCost: .NET Core 5.0(Runtime=.NET Core 5.0)
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Gen 0     : GC Generation 0 collects per 1000 operations
+  Gen 1     : GC Generation 1 collects per 1000 operations
+  Gen 2     : GC Generation 2 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms      : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:34 (34.71 sec), executed benchmarks: 2
+
+Global total time: 00:00:39 (39.03 sec), executed benchmarks: 2
+// * Artifacts cleanup *

@@ -1,0 +1,4 @@
+// Validating benchmarks:
+ThreadingDiagnoser supports only .NET Core 3.0+
+ThreadingDiagnoser supports only .NET Core 3.0+
+No exporters defined, results will not be persisted.
